@@ -58,7 +58,6 @@ while True:
             sys.exit()
         if event.type == pygame.MOUSEBUTTONDOWN:
             mousex, mousey = pygame.mouse.get_pos()
-            print(mousex, mousey)
             if baubleSelected == -1 and starDown == False:
                 if mousex < 320 and mousex > 280 and mousey < 40:
                     display.blit(starScaled, (mousex - 32, mousey - 32))
